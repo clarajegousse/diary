@@ -1,0 +1,21 @@
+% mainfile: ../../../../master.tex
+\subsection{@taskTitle}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:@label}
+\tags{@tags}
+%\authors{}
+%\files{}
+%\persons{}
+
+% Listing
+\begin{lstlisting}[language=python, caption=Python dictionary for amino acids labels, label=lst:python_dict_for_aa]
+AA_1TO3  = {
+    'A': 'ALA', 'C': 'CYS', 'D': 'ASP',
+    'E': 'GLU', 'F': 'PHE', 'G': 'GLY', 'H': 'HIS',
+    'I': 'ILE', 'K': 'LYS', 'L': 'LEU', 'M': 'MET',
+    'N': 'ASN', 'P': 'PRO', 'Q': 'GLN', 'R': 'ARG',
+    'S': 'SER', 'T': 'THR', 'V': 'VAL', 'W': 'TRP',
+    'Y': 'TYR',
+}
+\end{lstlisting}
