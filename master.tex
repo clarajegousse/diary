@@ -1,0 +1,43 @@
+\input{preamble.tex}
+\input{macros/diary.macro.tex}
+\input{buildFiles/tagDictionary.tex}
+\input{buildFiles/authorDictionary.tex}
+
+\title{Work Diary}
+\author{Clara Jégousse\\Matís}
+\date{Version 1.0.4\\Last compiled: \today}
+
+\begin{document}
+
+  \pagestyle{empty}
+  \pagenumbering{roman} %use arabic page numbering in the mainmatter
+  
+  %\maketitle
+  \input{titlepage.tex}
+  %  \cleardoublepage
+  
+  \pdfbookmark[0]{Contents}{label:contents}
+  \tableofcontents
+  
+  % \cleardoublepage
+  % \pdfbookmark[0]{Todos}{label:todos}
+  % \listoftodos
+  % \cleardoublepage
+  \pagestyle{fancy}
+
+  %mainmatter
+  \pagenumbering{arabic} %use arabic page numbering in the mainmatter
+  \input{buildFiles/taskList.tex}
+  
+  \begin{small}
+  %\printbibliography[heading=bibintoc]
+  %\nocite{*}
+  \bibliography{bib/bib2017}	
+  \end{small}
+  \printglossary[type=\acronymtype, title=Abbreviations]
+  \printindex[person]
+  \printindex[file]
+  \printindex[author]
+  \printindex[tag]
+  
+\end{document}
