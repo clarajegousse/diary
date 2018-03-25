@@ -1,0 +1,32 @@
+% mainfile: ../../../../master.tex
+\subsection{cDNA quantification with Qubit\texttrademark~ dsDNA BR Assay Kit}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180117_cj2}
+\tags{cdna,qnt,lab}
+\authors{cj}
+%\files{}
+\persons{Stephen}
+
+I obtained very expected results when quantifying the cDNA with the Qubit\texttrademark~ ssDNA Assay Kit and I mentionned this issue to Stephen. He suggested that I try to quantify the cDNA with the Qubit\texttrademark~ dsDNA BR Assay Kit instead as the cDNA is very likely double-stranded unlike what I thought.\sidenote{Qubit\texttrademark~ dsDNA BR Assay Kit (\texttt{LOT:1835789}) was opened by Elísabet Eik Guðmundsdóttir on the 20170817.}
+
+I did not dilute the reverse transcription mix at the end of the reaction, so the final volume was 20 μL . I used 2~\uL for the Nanodrop and 2~\uL for the Qubit\texttrademark~ ssDNA Assay. I also used 1~\uL for the \gls{pcr}. And finally, I use 2~\uL for the Qubit\texttrademark~ dsDNA BR Assay. For the Qubit\texttrademark~ dsDNA BR Assay, I prepare the assay for n=8 (6 samples + 2 standards), so I use 8~\uL of reagent (dye) and 1592~\uL of buffer, and I will use 2~\uL of each samples of cDNA. As a consequence, the final volume contaning the cDNA is 13~\uL. 
+
+\begin{table}[H]
+\caption{Total cDNA quantities in samples measured with Qubit\texttrademark ~DNA BR Assay Kit}
+\label{tab:20180117_nuc_acid_qnt}
+\centering
+\begin{tabular}{l r r r r}
+\toprule
+Sample ID & \textmu g/mL & $V_f$ (mL) & m (\textmu g) & m (ng) \\ \midrule\texttt{cDNA A+} & 1.41 & 0.013 & 0.018 & ~18 \\
+\texttt{cDNA A-} & 1.21 & 0.013 & 0.015 & ~15 \\
+\texttt{cDNA 4+} & 1.05 & 0.013 & 0.013 & ~13 \\
+\texttt{cDNA 4-} & TOO LOW & 0.013 & NA & NA \\
+\texttt{cDNA C+} & TOO LOW & 0.013 & NA & NA \\
+\texttt{cDNA C-} & TOO LOW & 0.013 & NA & NA \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The results presented in table \ref{tab:20180117_nuc_acid_qnt} are consistent with the results of the \gls{pcr}. It confirms that I was able to retrieve RNA from bacterial cultures \texttt{423 10M1} and \texttt{ALMIX}, and that I was able to reverse-transcribe the RNA in cDNA and eventually amplify the cDNA with bacterial primers. It is important to note that the negative control of the extraction are negative, which confirms that there was no contamination during the extraction process. However, the negative control of the reverse transcription for \texttt{ALMIX} labeled \texttt{A-} is not negative which reveals a contamination. This contamination might come from the reagents of the First Strand cDNA Synthesis Kit which is very old (and expired!).
+

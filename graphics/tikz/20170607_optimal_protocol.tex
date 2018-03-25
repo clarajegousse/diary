@@ -1,0 +1,46 @@
+% 20170607_optimal_protocol.tex
+
+\tikzstyle{block} = [rectangle, draw, fill=lightgrey, text centered, rounded corners, text width=20em]
+\tikzstyle{rna} = [rectangle, draw, fill=sunflower, text centered, rounded corners, text width=10em]
+\tikzstyle{dna} = [rectangle, draw, fill=aqua, text centered, rounded corners, text width=10em]
+\tikzstyle{line} = [draw, -latex']
+    
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block] (init) {thaw samples with 1 mL denaturing solution and re-freeze with liquid nitrogen};
+    \node [block, below of=init] (grind) {grind sample until thawed, re-freeze samples with liquid nitrogen $\times$ 3};
+    \node [block, below of=grind] (incubation) {incubate samples in pH 7 extraction buffer at 65\degree C for 30 min};
+    \node [block, below of=incubation] (collect) {collect the supernatent by centrifugation};
+    \node [block, below of=collect] (extract) {extract supernatant with chloroform};
+    \node [block, below of=extract] (precipitation) {precipitate nucleic acids with isopropyl alcohol};
+    \node [block, below of=precipitation] (suspend) {suspend nucleic acid pellet in 1 mL water};
+    \node [block, below of=suspend] (separate) {separate RNA from DNA with QIAGEN resin column};
+
+    \node [left of=separate] (left) {};
+    \node [right of=separate] (right) {};
+
+    \node [rna, below of=left] (rna) {purify RNA with QIAGEN resin};
+    \node [rna, below of=rna] (treat) {treat RNA with RNase free Dnase I};
+    \node [rna, below of=treat] (rtpcr) {RT-PCR, miccroarry, hybridization};
+
+    \node [dna, below of=right] (dna) {concentrate DNA from QIAGEN column and flow-throw fractions};
+    \node [dna, below of=dna] (purify) {purify DNA with Wizard column};
+    \node [dna, below of=purify] (pcr) {PCR, miccroarry, hybridization};
+
+    % Draw edges
+    \path [line] (init) -> (grind);
+    \path [line] (grind) -> (incubation);
+    \path [line] (incubation) -> (collect);
+    \path [line] (collect) -> (extract);
+    \path [line] (collect) -> (precipitation);
+    \path [line] (precipitation) -> (suspend);
+    \path [line] (suspend) -> (separate);
+
+    \path [line] (separate) -> (rna);
+    \path [line] (rna) -> (treat);
+    \path [line] (treat) -> (rtpcr);
+
+    \path [line] (separate) -> (dna);
+    \path [line] (dna) -> (purify);
+    \path [line] (purify) -> (pcr);
+\end{tikzpicture}

@@ -1,0 +1,117 @@
+% mainfile: ../../../../master.tex
+\subsection{Amplification by \gls{pcr} of previously optained cDNA with \gls{emp} primers and OneTaq\cR Hot Start DNA Polymerase}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180117_cj0}
+\tags{pcr,cdna,emp,lab}
+\authors{cj}
+%\files{}
+%\persons{}
+
+\subsubsection{Samples description}
+
+I want to amplify the cDNA obtained after reverse transcription of the RNA that was extracted from bactial cultures even though the amount of cDNA obtained according to the Qubit\texttrademark~ are not as expected. 
+\begin{itemize}
+\item[\texttt{A+}] cDNA obtained after reverse transcription of RNA extracted from \texttt{ALMIX}.
+\item[\texttt{A-}] negative control of reverse transcription of RNA extracted from \texttt{ALMIX}.
+\item[\texttt{4+}] cDNA obtained after reverse transcription of RNA extracted from \texttt{423 10M1}.
+\item[\texttt{4-}] negative control of reverse transcription of RNA extracted from \texttt{423 10M1}.
+\item[\texttt{C+}] cDNA obtained after reverse transcription of RNA extracted from the negative control of the nucleic acid extraction.
+\item[\texttt{C-}] negative control of reverse transcription of RNA extracted from the negative control of the nucleic acid extraction.
+\end{itemize}
+
+I decided to also try to amplify the DNA samples previously even thought the DNA concentrations according to the Qubit\texttrademark~ were below detection level. But never know, it might work.\sidenote{The labels of these DNA samples are related to the color of the stickers used to label the Eppendorf tubes containind the DNA extracts. This is probably not the best way to label my samples, but that was the only thing I could think of that would also fit of the tiny PCR tubes.}
+\begin{itemize}
+\item[\texttt{DNA g}] DNA extracted from micro-algae on the 20180103.
+\item[\texttt{DNA b}] DNA extracted from the negative control of the nucleic acid extraction.
+\item[\texttt{DNA p}] DNA extracted from \texttt{423 10M1} of the nucleic acid extraction.
+\item[\texttt{DNA r}] DNA extracted from \texttt{ALMIX} of the nucleic acid extraction.
+\end{itemize}
+
+
+
+\subsubsection{Preliminary setup}
+\begin{enumerate}
+\item Defrost all reagents and samples on ice (1h). \sidenote{Make sure all reagents are fully defrosted for accurate concentrations.}
+\item Place all required material in the LabCair \gls{pcr} Workstation and turn on the UV light to sterilize all required materials (\gls{pcr} racks, one Eppendorf tube for the master mix, dionised water, pipettes and tips, etc.).
+\end{enumerate}
+
+\subsubsection{Master Mix preparation}
+
+\begin{table}[H]
+\caption{Master Mix for a single \gls{pcr}}
+\label{tab:20170510_mastermix}
+\centering
+\begin{tabular}{l r r c}
+\toprule
+Primers & \multicolumn{2}{c}{EMP}\\
+\cmidrule(l){2-3}
+ & \multicolumn{2}{c}{Volumes (\uL) for} \\
+ & 1 reaction & 15 reactions \\ 
+\midrule 
+dH2O & 13.375~\uL & 200.625~\uL\\
+5X One Taq Buffer & ~5.0~\uL & 75.00~\uL \\
+dNTPs (10mM) & ~0.50~\uL & ~7.50~\uL \\
+Forward primer (10\textmu M) & ~0.50~\uL & ~7.50~\uL \\
+Reverse primer (10\textmu M) & ~0.50~\uL & ~7.50~\uL \\
+One Taq Polymerase &  0.125~\uL & ~1.875~\uL \\
+\midrule
+Template DNA & variable\uL & - \\
+\midrule
+$V_{f}$ (\uL) & 20 & 300 \\
+\bottomrule
+\end{tabular}
+% }
+\end{table}
+
+The DNA concentrations measured right after DNA extraction from cultures were very low, therefor I used 5~\uL as template. For the cDNA and for the positive controls (ARCH and BACT), I used 1~\uL for DNA template. 
+
+\begin{enumerate}
+\item Work in LabCair \gls{pcr} Workstation
+\item Multiply the volume of each reagent by the number of individual \gls{pcr} reactions you wish to perform (including the positive and negative controls) and add 2 extra to account for pipetting error.
+\item In a single 1.5mL-Eppendorf tube combine the following:
+	\begin{itemize}
+	\item Sterile dH2O
+	\item 5X One Taq Buffer
+	\item dNTP mix (10 mM each nt)
+	\item primers
+	\item One Taq Polymerase
+	\end{itemize}
+\item Mix the contents by gently pipetting up and down several times (keep tube on ice)
+\item Transfer  20 \textmu L of Master Mix into small \gls{pcr} tubes
+\item add 5 \textmu L of \gls{dna} template in each \gls{pcr} tube (on the pre-PCR bench)
+\item Secure the tops to the \gls{pcr} tubes
+\item Tap gently tubes to mix up everything
+\item Centrifuge briefly to bring all the liquid to the bottom before placing it in the \gls{pcr} machine
+\end{enumerate}
+
+\begin{figure}[H]
+\caption{Samples organisation in PCR tubes}
+\label{tikz:20180117_pcr_racks}
+\input{graphics/tikz/20180117_pcr_racks.tex}
+\end{figure}
+
+I place the PCR rack in the thermocycler with the settings presented in table \ref{tab:20180117_thermocycler_settings}.
+
+\begin{table}[H]
+\caption{Thermocycler settings}
+\label{tab:20180117_thermocycler_settings}
+\centering
+\begin{tabular}{l r r}
+ & \multicolumn{2}{c}{\texttt{EMP}}\\
+\cmidrule(l){2-3}
+Steps & T(\degree C) & Time \\
+\midrule
+Initial denaturation & 94 & 30 sec \\
+\midrule
+Denaturation & 94 & 30 sec \\
+Annealing & 50 & 40 sec \\
+Extension & 68 & 30 sec \\
+\midrule
+Final extension & 68 & 5 min \\
+Infinite hold & 4 & - \\
+\bottomrule
+\end{tabular}
+% }
+\end{table}
+

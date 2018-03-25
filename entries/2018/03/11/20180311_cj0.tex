@@ -1,0 +1,108 @@
+% mainfile: ../../../../master.tex
+\subsection{MasterPure\texttrademark~ complete DNA and RNA purification}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180311_cj0}
+\tags{lab,dna,rna,extr}
+\authors{cj}
+%\files{}
+\persons{Alexandra Leeper}
+
+\comment{Today is Sunday, I forgot that the first bus was at 10:00 AM this morning, so I arrived at 10:50 AM, and since Ali was here also, we decided to start our day by having porridge together.}
+
+\subsubsection{Introduction}
+
+Today I just want to perform the isolation of DNA and RNA from micro-algae cultured cells using a modified version MasterPure\texttrademark~ Complete DNA and RNA Purification kit. The modification consists of an addition step of bead beating during the cell lysis and softer DNase treatment. Last time I extracted DNA and RNA with this method, my RNA yield was a lot lower than expected, and I suspect it could be explained by the DNase treatment for 30 min at 37\degree C. Therefore, I will try a DNase treatment at room temperature for 1 hour. 
+
+Also, when I added a bead beating step to the AllPrep\cR DNA/RNA mini kit, I obtained more DNA than RNA which is not the expected results but then I repeated this experiment with a gentle bead beating step which lead to the expected results. 
+
+So this time, I just wanna make sure that I can obtain consistent results with the MasterPure\texttrademark~ complete DNA and RNA purification method.
+
+\subsubsection{Lysis of cells}
+
+\begin{enumerate}
+\item Transfer 2~mL of micro-algae cultures into a new Eppendorf tube.
+\item Pellet cells by centrifugation at maximum speed (21460 g; 15300 rpm) for 20 min at 4\degree C.
+\item Discard supernatent, leaving approximately 25~\uL of liquid.
+\comment{Using the centrifuge for 20 min at full speed really allows me to obtain a good pellet that does not move around.}
+\item Add 600~\uL of Tissue and Cell Lysis solution.
+\item Dilute 2~\uL of proteinase K into the lysate.
+\comment{There was no more proteinase K from the kit, so I used some of the proteinase K prepared by Solveig.}
+\item Vortex for 10 seconds to resuspend the cell pellet.
+\item Incubate at 65\degree C for 15 min, vortex every 5 min.
+\item Cool down samples in icy water.
+\item Add 0.2 g of beads.
+\item Shake at 30 Hz for 10 seconds and cool down in icy water and repeat this three times. 
+\item Place the sample on ice for 3-5 min before proceeding with the total nucleic acid precipitation.
+\end{enumerate}
+
+\subsubsection{Precipitation of total nucleic acids}
+
+\begin{enumerate}
+\item Add 175~\uL of MPC Protein Precipitation Reagent to the 600~\uL of lysed sample.
+\comment{It is hard to see the effect of the MPC reagent because of the bubbles resulting from the bead beating step.}
+\item Pellet the debris by centrifugation at 4\degree C for 10 min at 20000g in a microcentrifuge. 
+\important{The resulting pellet (beads and precipitate) is too lose so I decide to add an extra 200~\uL of MPC precipitation reagent and repeat the centrifugation step.}
+\item Transfer the supernatent to 2 clean microcentrifuge tubes.
+\comment{Tubes are labeled: one for DNA and one for RNA. I manage to transfer 400~\uL in each tube.}
+\comment{I transfer the supernatent to the RNA-labeled tube last because it is the most likely to contain contaminants (close to the pellet) but there will be another precipitation step for the RNA later.}
+\item Discard the pellet.
+\item Add 800~\uL of isopropanol to the recovered supernatant.\sidenote{I keep my isopropanol and ethanol on ice.}
+\comment{I increase the volume of isopropanol used so that it is twice the volume of liquid containing nucleic acids}
+\item Invert the tube 30-40 times.
+\item Pellet the total nucleic acids by centrifugation at 4\degree C for 10 min at maximum speed (21460 x g).
+\item Proceed to either DNA or RNA isolation.
+\end{enumerate}
+
+\subsubsection{DNA isolation}
+
+\begin{enumerate}
+\item Carefully pour off the isopropanol without dislodging the pellet.
+\item Rinse twice with 70\% ethanol, being careful to not dislodge the pellet.
+\comment{I use 500~\uL of 70\% ethanol.}
+\item Centrifuge briefly if the pellet is dislodge.
+\comment{I centrifuge at maximum speed for 2 min at 4\degree C.}
+\item Remove all residual ethanol with a pipette.
+\comment{The pellet is easy to see and therefore it is easy to remove all the ethanol.}
+\item Resuspend the total nucleic acids in 35~\uL of TE buffer.
+\important{I DO NOT RESUSPEND THE PELLET IN TE BUFFER: it inhibits downstream \gls{pcr}. I use 50~\uL of 10 mM Tris HCl buffer pH 8.}
+\comment{Resuspending the pellet in more volume than recommended decreases the final concentration of DNA, but it also decrease the concentration of eventual contaminants and will allow me to work with bigger volumes when trying to amplify the DNA: it is always easier to work with slighly bigger volumes than 0.5~\uL!}
+\end{enumerate}
+
+\subsubsection{RNA isolation}
+
+\begin{enumerate}
+\item Remove all residual isopropanol with a pipette.
+\item Add 200~\uL of DNase I solution.
+\item Add 10~\uL of RNase-free DNase I to the sample containing the DNase I solution and the nucleic acids pellet.
+\comment{Here I did not have a 10\uL pipette, so I used 5 $\times$ 2~\uL.}
+\item Resuspend the total nucleic acids pellet in the DNase I solution.
+\item Incubate at room temperature (on ice) for 1H.
+\item{Instead of 30 min at 37\degree C so hopefully it does not damage the RNA too much.}
+\item Add 200~\uL of 2X Tissue and Cell Lysis solution.
+\item Vortex for 5 seconds.
+\item Add 200~\uL of MPC Protein Reagent.
+\item Vortex for 10 seconds.
+\item Place on ice for 3-5 min.
+\item Pellet the debris by centrifugation for 10 min at maximum speed (21460 g) at 4\degree C.
+\item Transfer the supernatant containing the RNA into a clean eppendorf tube and discard the pellet.
+\comment{This time, the pellet is very white.}
+\item Add 500~\uL of isopropanol to the supernatant.
+\item Mix by inversion 30-40 times.
+\item Pellet the purified RNA by centrifugation at 4\degree C for 10 min at maximum speed.
+\item Remove carefully all isopropanol without dislodging the pellet.
+\item Rinse twice with 70\% ethanol, being careful to not dislodge the pellet.
+\comment{I use 500~\uL of 70\% ethanol.}
+\item Centrifuge briefly if the pellet is dislodge.
+\comment{I actually dislodge the pellet and centrifuge again at maximum speed for 1 min at 4\degree C.}
+\item Remove all residual ethanol with a pipette.
+\comment{The pellet is easy to see and therefore it is easy to remove all the ethanol.}
+\item Resuspend the total nucleic acids in 35~\uL of TE buffer.
+\important{I DO NOT RESUSPEND THE PELLET IN TE BUFFER: it inhibits downstream \gls{pcr}. I use 50~\uL of 10 mM Tris HCl buffer pH 8.}
+\item Add 1~\uL of RiboGard RNase Inhibitor.
+\end{enumerate}
+
+Once I am done, I place all reagents where they belong and place my DNA and RNA samples in the freezer at -20\degree C.
+
+
+

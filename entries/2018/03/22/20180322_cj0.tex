@@ -1,0 +1,123 @@
+% mainfile: ../../../../master.tex
+\subsection{Amplification by PCR with OneTaq\cR polymerase and \gls{emp} primers of DNA extracted with modified AllPrep\cR method}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180322_cj0}
+\tags{lab,pcr,dna,emp}
+\authors{cj}
+%\files{}
+%\persons{}
+
+\subsubsection{Description of the DNA templates}
+
+\begin{enumerate}
+\item \texttt{APB}: DNA extracted from micro-algae cultures using the AllPrep\cR kit with a harsh bead beating step.
+\item \texttt{APb}: DNA extracted from micro-algae cultures using the AllPrep\cR kit with a gentle bead beating step.
+\item \texttt{APb}: DNA extracted from micro-algae cultures using the MasterPure\texttrademark~ kit with a gentle bead beating step.
+\item \texttt{SAPb}: DNA extracted from a lost Sterivex\texttrademark~ filter using the AllPrep\cR kit with a gentle bead beating step.
+\end{enumerate}
+
+\subsubsection{Description of controls}
+My controls are:
+\begin{itemize}
+\item[+] diluted DNA from \textit{Thermoanaerobacterium sp.} (Bacteria)
+\item[+] DNA from \textit{Thermococcus barophilus} 1 ng/\uL (Archeae)
+\item[-] DNA from Cod 1 ng/\uL (Eukaryote)
+\item[-] Autoclaved MilliQ water
+\end{itemize}
+
+\subsubsection{Description of the polymerase}
+
+I will use the \href{https://www.neb.com/products/m0481-onetaq-hot-start-dna-polymerase#Product%20Information}{OneTaq\cR Hot Start DNA polymerase} by New England BioLabs with the \gls{emp} primers.
+
+\subsubsection{Preliminary setup}
+
+\begin{enumerate}
+\item Defrost all reagents and samples on ice (1h). \sidenote{It is very important that reagents (especially primers and dNTPs) are fully defrosted otherwise the concentration will not be accurate.}
+\item Place all required material in LabCair \gls{pcr} Workstation and turn on \gls{uv} light for at least 20 min.
+\end{enumerate}
+
+
+\subsubsection{Methods}
+
+\begin{enumerate}
+\item Work in LabCair \gls{pcr} Workstation
+\item Multiply the volume of each reagent by the number of individual \gls{pcr} reactions you wish to perform (including the positive and negative controls) and add 2 extra to account for pipetting error (see table \ref{tab:20180322_mastermix}).
+\comment{I have 4 samples, 4 controls, and 2 extra, which means I must prepare a master mix for 12 reactions.}
+\item In a single 2mL-Eppendorf tube combine the following:
+	\begin{itemize}
+	\item Sterile dH2O
+	\item 5X OneTaq Reaction Buffer
+	\item OneTaq GC Enhancers
+	\item dNTP mix (10 mM each nt)
+	\item primers (EMP primers)
+	\item OneTaq\cR Hot Start DNA Polymerase
+	\end{itemize}
+	\sidenote{I use a new tube of OneTaq\cR Hot Start DNA Polymerase that I recieved few weeks ago.}
+\item Mix the contents by gently pipetting up and down several times (keep tube on ice)
+\item Transfer  22.5 \textmu L of Master Mix into small \gls{pcr} tubes
+\item add 10 \textmu L of \gls{dna} template in each \gls{pcr} tube (on the pre-PCR bench) following the layout shown in figure \ref{tikz:20180322_pcr_racks}.
+\item Secure the tops to the \gls{pcr} tubes
+\item Tap gently tubes to mix up everything
+\item Centrifuge briefly to bring all the liquid to the bottom before placing it in the \gls{pcr} machine
+\end{enumerate}
+\comment{I am not sure if the last well of the PCR rack actually contains 20\uL ... it seems that even with 2 extra, I did not have enough MasterMix.}
+
+\begin{table}[htbp]
+\caption{Master Mix}
+\label{tab:20180322_mastermix}
+\centering
+\begin{tabular}{l r r c}
+\toprule
+Primers & \multicolumn{2}{c}{EMP}\\
+\cmidrule(l){2-3}
+ & \multicolumn{2}{c}{Volumes (\uL) for} \\
+ \cmidrule(l){2-3}
+ & 1 reaction & 10 reactions \\ 
+\midrule 
+dH2O & 10.875~\uL & 130.50~\uL\\
+5X OneTaq Reaction Buffer & ~5.00~\uL & 60.00~\uL \\
+GC Enhancers & ~2.50~\uL & 30.00~\uL \\
+dNTPs (10mM) & ~0.50~\uL & ~6.00~\uL \\
+Forward primer (10\textmu M) & ~0.50~\uL & ~6.00~\uL \\
+Reverse primer (10\textmu M) & ~0.50~\uL & ~6.00~\uL \\
+OneTaq\cR DNA Polymerase &  0.125\uL & ~1.50\uL \\
+\midrule
+Template DNA & 5\uL & - \\
+\midrule
+$V_{f}$ (\uL) & 25 & - \\
+\bottomrule
+\end{tabular}
+% }
+\end{table}
+
+
+\begin{figure}[htbp]
+\caption{Samples organisation in PCR tubes}
+\label{tikz:20180322_pcr_racks}
+\input{graphics/tikz/20180322_pcr_racks.tex}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{Thermocycler settings}
+\label{tab:20180322_thermocycler_settings}
+\centering
+\begin{tabular}{l r r}
+ & \multicolumn{2}{c}{\texttt{EMP}}\\
+\cmidrule(l){2-3}
+Steps & T(\degree C) & Time \\
+\midrule
+Initial denaturation & 94 & 30 sec \\
+\midrule
+Denaturation & 94 & 30 sec \\
+Annealing & 60 & 40 sec \\
+Extension & 60 & 20 sec \\
+\midrule
+Final extension & 60 & 2 min \\
+Infinite hold & 4 & - \\
+\bottomrule
+\end{tabular}
+% }
+\end{table}
+
+\important{I decreased the denaturation/annealing/extension tempertures from 68 to 68 because it is still within the range recommended for the OneTaq\cR polymerase and it will give more time for the annealing (the downside is that it increases the chances of mismatch). Also I increased the number of cycles from 30 to 40 cycles which results in a total time of 1H30 in the thermocycler.}

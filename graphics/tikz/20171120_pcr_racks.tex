@@ -1,0 +1,51 @@
+\newcommand*\smp[1]{\texttt{#1}}
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[%remember picture,
+  well/.style={rounded rectangle, minimum width=3.5cm, fill=lightgrey, thick, inner sep=3pt, node distance=3pt, minimum height=0.5cm},
+  line/.style={fill=white, thick, inner sep=3pt, node distance=3pt, align=left},
+  racknum/.style={thick, inner sep=3pt, node distance=3pt, minimum width=0.6cm},
+  rack/.style={fill=Aqua, thick, inner sep=3pt, node distance=3pt},
+  primer/.style={fill=white, align=left}
+  ]
+    \node[primer] (emp) {\textbf{EUK1}};
+       \node[rack, fill=white, below=of emp] (labels1) {
+        \begin{tikzpicture}
+          \node [racknum, draw=white] (1)  {};
+          \node [well, fill=white, right=of 1] (well1)  {A};
+          \node [well, fill=white, right=of well1] (well2)  {B};
+          \node [well, fill=white, right=of well2] (well3)  {C};
+          \node [well, fill=white, right=of well3] (well4)  {D};
+          \node [well, fill=white, right=of well4] (well5)  {E};
+          \node [well, fill=white, right=of well5] (well6)  {F};
+          \node [well, fill=white, right=of well6] (well7)  {G};
+          \node [well, fill=white, right=of well7] (well8)  {H};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of labels1] (rack1) {
+        \begin{tikzpicture}
+          \node [racknum] (1)  {\#1~};
+          \node [well, right=of 1] (well1)  {\smp{+CTRL COD}};
+          \node [well, right=of well1] (well2)  {\smp{KG5\_300\_0m}};
+          \node [well, right=of well2] (well3)  {\smp{KG5\_300\_10m}};
+          \node [well, right=of well3] (well4)  {\smp{KG5\_300\_200m}};
+          \node [well, right=of well4] (well5)  {\smp{KG5\_300\_NC}};
+          \node [well, right=of well5] (well6)  {\smp{}};
+          \node [well, right=of well6] (well7)  {\smp{}};
+          \node [well, right=of well7] (well8)  {\smp{}};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of rack1] (rack2) {
+        \begin{tikzpicture}
+          \node [racknum] (1)  {\#2~};
+          \node [well, right=of 1] (well1)  {\smp{CRYP}};
+          \node [well, right=of well1] (well2)  {\smp{FRA}};
+          \node [well, right=of well2] (well3)  {\smp{CHAE}};
+          \node [well, right=of well3] (well4)  {\smp{NC}};
+          \node [well, right=of well4] (well5)  {\smp{-CTRL}};
+          \node [well, right=of well5] (well6)  {\smp{}};
+          \node [well, right=of well6] (well7)  {\smp{}};
+          \node [well, right=of well7] (well8)  {\smp{}};
+        \end{tikzpicture}
+      };
+\end{tikzpicture}
+}

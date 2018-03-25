@@ -1,0 +1,110 @@
+ecoli Escherichia coli
+misc Miscellaneous
+tex Latex
+struct Structure
+aln Alignments
+pred Predictions
+html HTML
+js Javascript
+prot Protein
+asa Accessible surface area
+pep Peptides
+seq Sequence
+ncbi NCBI
+edu Education
+bact Bacteria
+mfe Minimum free energy
+data Data
+aa Amino acids
+lit Literature
+biopy Biopython
+sh Bash
+py Python
+puffin Puffin?
+cycle Cycle
+c Carbon
+workshop Workshop
+pcr Polymerase chain reaction
+metagenomicsMetagenomics
+xls Excel
+fcm Flow cytometry
+ngs Next Generation Sequencing
+osd Ocean Sampling Day
+micro Microscopy
+planktonPlankton
+filt Filtration
+qnt Quantification
+maps Maps
+kfs KingFisher
+ctab CTAB
+stn Stations
+hafro Hafrannsóknastofnun
+mtdt Metadata
+ptcl Protocols
+lab Laboratory
+exp Experiments
+sampling Sampling
+extr Extraction
+metagen Metagenomic
+sip Stable-isotope probing
+mime Microbes in the Icelandic Marine Environment
+ri Research \& Innovation
+iscar ISCAR
+matis Matis
+rfi Request for Information
+qc Quality Control
+hplc High Performance Liquid Chromatography
+hiseq HiSeq
+st Stokksnes
+ln Langanes
+si Siglunes
+hb Hornbanki
+fx Faxaflói
+kg Kogur
+garpur Garpur
+miseq MiSeq
+icebio2017 IceBio2017
+qiime2 QIIME2
+climathon Climathon
+hpc High Performance Computer
+practPracticals
+wsc World Seafood Congress
+hi Háskóli íslands
+rtpcr RT-PCR
+cdna cDNA
+emp Earth Microbiom Project
+ph pH
+o2 Carbon dioxyde
+medor Medor
+img Images
+phd Ph.D
+csv Comma separated values
+fcs Flow cytometry standard
+temp Temperature
+odv Ocean Data View
+svx Sterivex
+la Langanes
+lb Latrabjarg
+is Iceland
+nmr Nuclear magnetic resonance
+sb Selvogsbanki
+sop Standard Operational Procedure
+freezethaw Freeze-Thaw DNA extraction method
+beamer Beamer
+ui University of Iceland 
+kemia Kemia
+ih Ingolfshodi
+eda Exploratory Data Analysis
+noaa National Oceanic and Atmospheric Administration
+hr Human Ressources
+meet Meeting
+n Nitrogen
+gc Gas Chromatography
+it Information Technology
+laf Laminar Air Flow
+lfh Laminar Flow Hood
+sd Standard Deviation
+rodac Replicate Organism Detection and Counting
+rlu Relative Light Unit
+rfq request for Quotation
+smp Samples

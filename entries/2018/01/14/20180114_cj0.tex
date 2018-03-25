@@ -1,0 +1,51 @@
+% mainfile: ../../../../master.tex
+\subsection{DNA quantification Nanodrop}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180114_cj0}
+\tags{dna,qnt,lab}
+\authors{cj}
+%\files{}
+%\persons{}
+
+After resuspending the DNA in Tris buffer yesterday night, I left the DNA overnight in the freezer at -20\degree C. I use 2\uL of each sample for the Nanodrop analysis. \sidenote{It's about 6:30 PM when I do the quantification.}
+
+\begin{figure}[H] % position of the figure 
+    \centering
+    \caption{Screenshots of the NanoDrop analysis of DNA extracted from bacterial cultures.}
+    \label{fig:20180114_nanodrop}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{graphics/screenshots/CJ20180114_DNA_ALMIX.png}
+        \caption{\texttt{DNA ALMIX}}
+        \label{sfig:CJ20180114_DNA_ALMIX}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{graphics/screenshots/CJ20180114_DNA_423.png}
+        \caption{\texttt{DNA 423}}
+        \label{sfig:CJ20180114_DNA_423}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{graphics/screenshots/CJ20180114_DNA_CTRL.png}
+        \caption{\texttt{DNA CTRL}}
+        \label{sfig:CJ20180114_DNA_CTRL}
+    \end{subfigure}
+\end{figure}
+
+\begin{table}[htbp]
+\caption{res/nanodrop/CJ20180114.txt}
+\label{tab:CJ20180114}
+\centering
+\begin{tabular}{l l l l l l l l l l l l l }
+\toprule
+Sample ID & Time  & ng/ul  & A260  & A280  & 260/280  & 260/230  \\ \midrule
+\texttt{CJ20180114\_BLANK} & 12:54 & 1,29 & 0,026 & 0,026 & 1,01 & 0,34 \\
+\texttt{CJ20180114\_CTRL} & 12:55 & 280,35 & 5,607 & 3,034 & 1,85 & 0,41 \\
+\texttt{CJ20180114\_DNA\_423} & 12:57 & 193,32 & 3,866 & 2,043 & 1,89 & 0,28 \\
+\texttt{CJ20180114\_DNA\_ALMIX} & 12:59 & 207,32 & 4,146 & 2,377 & 1,74 & 0,32 \\
+\bottomrule
+\end{tabular}
+\\
+User: Default - Date: 14.1.2018 - Constant: 50,00 - Cursor position: 230 \
+\end{table}

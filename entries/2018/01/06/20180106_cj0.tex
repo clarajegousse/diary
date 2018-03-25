@@ -1,0 +1,88 @@
+% mainfile: ../../../../master.tex
+\subsection{First strand \gls{cdna} synthesis protocol}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180106_cj0}
+\tags{cdna,rna,lab,exp}
+\authors{cj}
+%\files{}
+%\persons{}
+
+I will follow the same protocol as I did last time (cf. sections \ref{task:20170815_cj0,task:20170815_cj1}) using the ProtoScript\cR First Strand cDNA Synthesis Kit by New England BioLabs (Lot:0041411).
+
+\subsubsection{Preliminary setup}
+
+\important{The ProtoScript\cR~ First Strand cDNA Synthesis Kit that is available at the moment in the lab is the one Pauline Vannier used for her previous work. It expired on 11/15 (Lot: 0041411); so it's been two years that this kit is expired, but it was kept at -20\degree C. If this experiment fails, it could be because the reagents are too old.}
+
+\begin{enumerate}
+\item Thaw kit components and total \gls{rna} samples on ice.
+\item Place all required material in \gls{pcr} Workstation and turn on \gls{uv} light for at least 20 min (gloves, \gls{pcr} tubes rack, open tip boxes, sterile water, pipettes).
+\end{enumerate}
+
+\subsubsection{Method}
+
+\begin{enumerate}
+\item Mix RNA sample and Random Primer Mix (60 \textmu M) in two sterile RNase-free microfuge tubes.
+\item Denature RNA for 5 minutes at 70\degree C. Spin briefly and put promptly on ice. \sidenote{This step is optional. However, it improves the cDNA yield for long messenger RNAs and GC-rich RNA regions.}
+\item Add the following components to one tube: 10 \uL M-MuLV Reaction Mix and 2 \uL M-MuLV Enzyme Mix. To the negative control tube, add 10 \uL M-MuLV and 2 \uL of water.\sidenote{A control reaction without reverse transcriptase is recommended to examine the DNA contamination in the samples.}
+\item  Incubate the 20 \uL cDNA synthesis reaction at 25\degree C for 5 min.\sidenote{If Random Primer Mix is used, an incubation step at 25\degree C for 5 min is recommended before the 42\degree C incubation.}
+\item Incubate the 20 \uL cDNA synthesis reaction at 42\degree C for one hour.
+\item Inactivate the enzyme at 80\degree C for 5 minutes. 
+\item Dilute reaction to 50 \uL with 30 \uL H2O for \gls{pcr}. The \gls{cdna} product should be stored at –20\degree C. \sidenote{For downsteam PCR ampli cation, the volume of \gls{cdna} product should not exceed 1/10 of the PCR reaction volume.}
+\end{enumerate}
+
+\begin{table}[H] %
+\centering
+\caption{Summary of the First strand \gls{cdna} synthesis protocol} %
+\label{tab:20170815_summary_protocol}
+\begin{tabular}{l c c } %
+\toprule % Top horizontal line
+Samples & \multicolumn{2}{c}{\texttt{RNA}} \\
+\cmidrule(l){2-3}
+Labels & \texttt{++} & \texttt{+-} \\ \midrule
+Reagents & \multicolumn{2}{c}{Volume (\textmu L)} \\ % Column names row
+\midrule % In-table horizontal line
+Total RNA & 6 & 6 \\ 
+Random Primer Mix (60 \textmu M) & 2 & 2 \\
+Nuclease free water & - & - \\
+\midrule
+Total volume & 8 & 8 \\
+\midrule
+\multicolumn{3}{c}{RNA Denaturation 5 min at 70\degree C} \\
+\midrule
+M-MulV Reaction Mix & 10 & 10 \\
+M-MulV Enzyme Mix & 2 & - \\
+Nuclease free water & - & 2 \\
+\midrule
+Total volume & 20 & 20 \\
+\midrule
+\multicolumn{3}{c}{Incubation 5 min at 25\degree C} \\
+\midrule
+\multicolumn{3}{c}{Incubation 1h at 42\degree C} \\
+\midrule
+\multicolumn{3}{c}{Enzyme denaturation 5 min at 80\degree C} \\
+\midrule
+Water & 30 & 30 \\
+\midrule
+Total volume & 50 & 50 \\
+\bottomrule % Bottom horizontal line
+\end{tabular}
+\end{table}
+
+\subsubsection{cDNA Quantification with Qubit\texttrademark~ ssDNA Assay Kit}
+
+For this assay, I have $n = 4$ (2 samples + 2 standards), so I mix 4~\uL of reagent (dye) with 796~\uL of buffer, and I use 1~\uL of each of my sample to measure the concentration.\sidenote{Qubit\texttrademark~ ssDNA Assay Kit (\texttt{LOT:1792648}) opened on 20160615.}
+
+\begin{table}[H]
+\caption{Total cDNA quantities in samples measured with Qubit\texttrademark ~ssDNA Assay Kit}
+\label{tab:20180106_nuc_acid_qnt}
+\centering
+\begin{tabular}{l r r r r}
+\toprule
+Sample ID & \textmu g/mL & $V_f$ (mL) & m (\textmu g) & m (ng) \\ \midrule\texttt{cDNA +} & 9.66 & 0.017 & 0.164 & 164 \\
+\texttt{cDNA -} & 8.94 & 0.017 & 0.151 & 151 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Qubit measure single-stranded DNA in both samples, even in the negative control. This is not acceptable, so I will just stop at this stage (I will not continue with amplifications) and I will just start over again with an extraction.  

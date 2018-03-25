@@ -1,0 +1,262 @@
+\newcommand*\smp[1]{\texttt{#1}}
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[%remember picture,
+  well/.style={rounded rectangle, minimum width=3.5cm, fill=lightgrey, thick, inner sep=3pt, node distance=3pt, minimum height=0.5cm},
+  line/.style={fill=white, thick, inner sep=3pt, node distance=3pt, align=left},
+  racknum/.style={thick, inner sep=3pt, node distance=3pt, minimum width=0.6cm},
+  rack/.style={fill=Aqua, thick, inner sep=3pt, node distance=3pt},
+  primer/.style={fill=white, align=left}
+  ]
+    \node[primer] (arch) {\textbf{ARCH}};
+       \node[rack, fill=white, below=of arch] (labels) {
+        \begin{tikzpicture}
+          \node [racknum, draw=white] (1)  {};
+          \node [well, fill=white, right=of 1] (well1)  {A};
+          \node [well, fill=white, right=of well1] (well2)  {B};
+          \node [well, fill=white, right=of well2] (well3)  {C};
+          \node [well, fill=white, right=of well3] (well4)  {D};
+          \node [well, fill=white, right=of well4] (well5)  {E};
+          \node [well, fill=white, right=of well5] (well6)  {F};
+          \node [well, fill=white, right=of well6] (well7)  {G};
+          \node [well, fill=white, right=of well7] (well8)  {H};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of labels] (rack1) {
+        \begin{tikzpicture}
+          \node [racknum] (1)  {\#1~};
+          \node [well, right=of 1] (well1)  {\smp{MC20170310.022}};
+          \node [well, right=of well1] (well2)  {\smp{CJ20170314.022}};
+          \node [well, right=of well2] (well3)  {\smp{AL20170426.022}};
+          \node [well, right=of well3] (well4)  {\smp{MC20170427.022}};
+          \node [well, right=of well4] (well5)  {\smp{MC20170427.045}};
+          \node [well, right=of well5] (well6)  {\smp{CJ20170428.045}};
+          \node [well, right=of well6] (well7)  {\smp{POSITIVE CTRL}};
+          \node [well, right=of well7] (well8)  {\smp{NEGATIVE CTRL}};
+        \end{tikzpicture}
+      };
+      \node[primer, below=of rack1] (bact) {\textbf{BACT}};
+      \node[rack, fill=white, below=of bact] (labels2) {
+        \begin{tikzpicture}
+          \node [racknum, draw=white] (1)  {};
+          \node [well, fill=white, right=of 1] (well1)  {A};
+          \node [well, fill=white, right=of well1] (well2)  {B};
+          \node [well, fill=white, right=of well2] (well3)  {C};
+          \node [well, fill=white, right=of well3] (well4)  {D};
+          \node [well, fill=white, right=of well4] (well5)  {E};
+          \node [well, fill=white, right=of well5] (well6)  {F};
+          \node [well, fill=white, right=of well6] (well7)  {G};
+          \node [well, fill=white, right=of well7] (well8)  {H};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of labels2] (rack2) {
+        \begin{tikzpicture}
+          \node [racknum] (2)  {\#2~};
+          \node [well, right=of 2] (well1)  {\smp{AL20170220.045}};
+          \node [well, right=of well1] (well2)  {\smp{MC20170310.022}};
+          \node [well, right=of well2] (well3)  {\smp{CJ20170314.022}};
+          \node [well, right=of well3] (well4)  {\smp{MC20170315.022}};
+          \node [well, right=of well4] (well5)  {\smp{AL20170426.022}};
+          \node [well, right=of well5] (well6)  {\smp{AL20170426.045}};
+          \node [well, right=of well6] (well7)  {\smp{MC20170427.022}};
+          \node [well, right=of well7] (well8)  {\smp{MC20170427.045}};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of rack2] (rack3) {
+        \begin{tikzpicture}
+          \node [racknum] (3)  {\#3~};
+          \node [well, right=of 2] (well1)  {\smp{CJ20170428.045}};
+          \node [well, right=of well1] (well2)  {\smp{POSITIVE CTRL}};
+          \node [well, right=of well2] (well3)  {\smp{NEGATIVE CTRL}};
+          \node [well, right=of well3] (well4)  {};
+          \node [well, right=of well4] (well5)  {};
+          \node [well, right=of well5] (well6)  {};
+          \node [well, right=of well6] (well7)  {};
+          \node [well, right=of well7] (well8)  {};
+        \end{tikzpicture}
+      };
+
+      \node[primer, below=of rack3] (emp) {\textbf{EMP}};
+      \node[rack, fill=white, below=of emp] (labels3) {
+        \begin{tikzpicture}
+          \node [racknum, draw=white] (1)  {};
+          \node [well, fill=white, right=of 1] (well1)  {A};
+          \node [well, fill=white, right=of well1] (well2)  {B};
+          \node [well, fill=white, right=of well2] (well3)  {C};
+          \node [well, fill=white, right=of well3] (well4)  {D};
+          \node [well, fill=white, right=of well4] (well5)  {E};
+          \node [well, fill=white, right=of well5] (well6)  {F};
+          \node [well, fill=white, right=of well6] (well7)  {G};
+          \node [well, fill=white, right=of well7] (well8)  {H};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of labels3] (rack3) {
+        \begin{tikzpicture}
+          \node [racknum] (2)  {\#4~};
+          \node [well, right=of 2] (well1)  {\smp{MC20170222.045}};
+          \node [well, right=of well1] (well2)  {\smp{MC20170303.045}};
+          \node [well, right=of well2] (well3)  {\smp{AL20170307.022}};
+          \node [well, right=of well3] (well4)  {\smp{MC20170310.022}};
+          \node [well, right=of well4] (well5)  {\smp{CJ20170314.022}};
+          \node [well, right=of well5] (well6)  {\smp{CJ20170314.045}};
+          \node [well, right=of well6] (well7)  {\smp{MC20170315.022}};
+          \node [well, right=of well7] (well8)  {\smp{CJ20170316.NC}};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of rack3] (rack4) {
+        \begin{tikzpicture}
+          \node [racknum] (3)  {\#5~};
+          \node [well, right=of 2] (well1)  {\smp{CJ20170317.022}};
+          \node [well, right=of well1] (well2)  {\smp{AL20170317.022}};
+          \node [well, right=of well2] (well3)  {\smp{AL20170426.022}};
+          \node [well, right=of well3] (well4)  {\smp{AL20170426.045}};
+          \node [well, right=of well4] (well5)  {\smp{AL20170426.NC}};
+          \node [well, right=of well5] (well6)  {\smp{MC20170427.022}};
+          \node [well, right=of well6] (well7)  {\smp{MC20170427.045}};
+          \node [well, right=of well7] (well8)  {\smp{CJ20170428.022}};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of rack4] (rack5) {
+        \begin{tikzpicture}
+          \node [racknum] (3)  {\#6~};
+          \node [well, right=of 2] (well1)  {\smp{CJ20170428.045}};
+          \node [well, right=of well1] (well2)  {\smp{CJ20170428.NC}};
+          \node [well, right=of well2] (well3)  {\smp{POSITIVE CTRL}};
+          \node [well, right=of well3] (well4)  {\smp{NEGATIVE CTRL}};
+          \node [well, right=of well4] (well5)  {\smp{}};
+          \node [well, right=of well5] (well6)  {\smp{}};
+          \node [well, right=of well6] (well7)  {\smp{}};
+          \node [well, right=of well7] (well8)  {\smp{}};
+        \end{tikzpicture}
+      };
+
+      \node[primer, below=of rack5] (euk1) {\textbf{EUK1}};
+      \node[rack, fill=white, below=of euk1] (labels4) {
+        \begin{tikzpicture}
+          \node [racknum, draw=white] (1)  {};
+          \node [well, fill=white, right=of 1] (well1)  {A};
+          \node [well, fill=white, right=of well1] (well2)  {B};
+          \node [well, fill=white, right=of well2] (well3)  {C};
+          \node [well, fill=white, right=of well3] (well4)  {D};
+          \node [well, fill=white, right=of well4] (well5)  {E};
+          \node [well, fill=white, right=of well5] (well6)  {F};
+          \node [well, fill=white, right=of well6] (well7)  {G};
+          \node [well, fill=white, right=of well7] (well8)  {H};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of labels4] (rack6) {
+        \begin{tikzpicture}
+          \node [racknum] (3)  {\#7~};
+          \node [well, right=of 2] (well1)  {\smp{AL20170307.045}};
+          \node [well, right=of well1] (well2)  {\smp{MC20170310.022}};
+          \node [well, right=of well2] (well3)  {\smp{CJ20170314.022}};
+          \node [well, right=of well3] (well4)  {\smp{AL20170426.022}};
+          \node [well, right=of well4] (well5)  {\smp{AL20170426.045}};
+          \node [well, right=of well5] (well6)  {\smp{MC20170427.022}};
+          \node [well, right=of well6] (well7)  {\smp{MC20170427.045}};
+          \node [well, right=of well7] (well8)  {\smp{CJ20170428.022}};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of rack6] (rack7) {
+        \begin{tikzpicture}
+          \node [racknum] (3)  {\#8~};
+          \node [well, right=of 2] (well1)  {\smp{CJ20170428.045}};
+          \node [well, right=of well1] (well2)  {\smp{POSITIVE CTRL}};
+          \node [well, right=of well2] (well3)  {\smp{NEGATIVE CTRL}};
+          \node [well, right=of well3] (well4)  {\smp{}};
+          \node [well, right=of well4] (well5)  {\smp{}};
+          \node [well, right=of well5] (well6)  {\smp{}};
+          \node [well, right=of well6] (well7)  {\smp{}};
+          \node [well, right=of well7] (well8)  {\smp{}};
+        \end{tikzpicture}
+      };
+
+      \node[primer, below=of rack7] (euk2) {\textbf{EUK2}};
+      \node[rack, fill=white, below=of euk2] (labels5) {
+        \begin{tikzpicture}
+          \node [racknum, draw=white] (1)  {};
+          \node [well, fill=white, right=of 1] (well1)  {A};
+          \node [well, fill=white, right=of well1] (well2)  {B};
+          \node [well, fill=white, right=of well2] (well3)  {C};
+          \node [well, fill=white, right=of well3] (well4)  {D};
+          \node [well, fill=white, right=of well4] (well5)  {E};
+          \node [well, fill=white, right=of well5] (well6)  {F};
+          \node [well, fill=white, right=of well6] (well7)  {G};
+          \node [well, fill=white, right=of well7] (well8)  {H};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of labels5] (rack8) {
+        \begin{tikzpicture}
+          \node [racknum] (3)  {\#9~};
+          \node [well, right=of 2] (well1)  {\smp{MC20170303.045}};
+          \node [well, right=of well1] (well2)  {\smp{MC20170315.022}};
+          \node [well, right=of well2] (well3)  {\smp{CJ20170317.022}};
+          \node [well, right=of well3] (well4)  {\smp{AL20170426.022}};
+          \node [well, right=of well4] (well5)  {\smp{MC20170427.022}};
+          \node [well, right=of well5] (well6)  {\smp{CJ20170428.022}};
+          \node [well, right=of well6] (well7)  {\smp{AL20170426.045}};
+          \node [well, right=of well7] (well8)  {\smp{MC20170427.045}};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of rack8] (rack9) {
+        \begin{tikzpicture}
+          \node [racknum] (3)  {\#10};
+          \node [well, right=of 2] (well1)  {\smp{POSITIVE CTRL}};
+          \node [well, right=of well1] (well2)  {\smp{NEGATIVE CTRL}};
+          \node [well, right=of well2] (well3)  {\smp{}};
+          \node [well, right=of well3] (well4)  {\smp{}};
+          \node [well, right=of well4] (well5)  {\smp{}};
+          \node [well, right=of well5] (well6)  {\smp{}};
+          \node [well, right=of well6] (well7)  {\smp{}};
+          \node [well, right=of well7] (well8)  {\smp{}};
+        \end{tikzpicture}
+      };
+
+\end{tikzpicture}
+}
+
+
+% \usetikzlibrary{matrix}
+% \newcommand*\up{\textcolor{Grass}{$\blacktriangle$}}
+% \newcommand*\down{\textcolor{Grapefruit}{$\blacktriangledown$}}
+% \newcommand*\const{\textcolor{DarkGrey}{\textbf{--}}}
+% \newcommand*\head[1]{\textbf{#1}}
+
+% \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+%     minimum height=2em]
+
+% \newenvironment{matrixtable}[9]{%
+%   \begin{tikzpicture}[matrix of nodes/.style={
+%     execute at begin cell=\node\bgroup\strut,
+%     execute at end cell=\egroup;}]
+%   \matrix (m) [matrix of nodes,
+%     draw=white,
+%     nodes={draw=black,color=darkgrey,
+%     draw,inner sep=2pt,minimum height=3.1ex},
+%     column sep=1ex,row sep=0.6ex,inner sep=2ex,
+%     rounded corners,column 1/.style={minimum width=#1},
+%     column 2/.style={minimum width=#2},
+%     column 3/.style={minimum width=#3},
+%     column 4/.style={minimum width=#4},
+%     column 5/.style={minimum width=#5},
+%     column 6/.style={minimum width=#6},
+%     column 7/.style={minimum width=#7},
+%     column 8/.style={minimum width=#8},
+%     column 9/.style={minimum width=#9}]}%
+% {;\end{tikzpicture}}
+
+% \begin{center}
+% \begin{matrixtable}{1.2cm}{2.4cm}{1.2cm}{0.6cm}{0.6cm}{0.6cm}{0.6cm}{0.6cm}{0.6cm}{
+%   \head{Rank}   & \head{Distribution} & \head{Hits} & 2 & 3 & 4 & 5 & 6 & 7 \\
+%   1 & Ubuntu    & 2114 & \down  & & & & & \\
+%   2 & Fedora    & 1451 & \up    & & & & & \\
+%   3 & Mint      & 1297 & \const & & & & & \\
+%   4 & OpenSUSE  & 1228 & \up    & & & & & \\
+%   5 & Debian    & 910  & \down  & & & & & \\
+%   6 & Mandriva  & 907  & \up    & & & & & \\
+%   7 & PCLinuxOS & 764  & \up    & & & & & \\
+%   8 & Puppy     & 738  & \up    & & & & & \\
+%   9 & Sabayon   & 671  & \up    & & & & & \\
+%  10 & Arch      & 625  & \down  & & & & & \\
+% }
+% \end{matrixtable}
+% \end{center}

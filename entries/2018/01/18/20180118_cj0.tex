@@ -1,0 +1,36 @@
+% mainfile: ../../../../master.tex
+\subsection{Summary of experiements previously carried out}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180118_cj0}
+\tags{rna,dna,pcr}
+\authors{cj}
+%\files{}
+%\persons{}
+
+\begin{table}[H]
+  \centering
+  \vspace{-0.5cm}
+  \resizebox{\textwidth}{!}{
+    \begin{tabular}{l l l l l l l}
+     & \multicolumn{2}{c}{\texttt{attempt \#1}} & \multicolumn{2}{c}{\texttt{attempt \#2}}  & \multicolumn{2}{c}{\texttt{attempt \#3}}\\
+    \cmidrule(l){2-3} \cmidrule(l){4-5} \cmidrule(l){6-7}
+    Start & \multicolumn{2}{c}{\texttt{2017.01.03}} & \multicolumn{2}{c}{\texttt{2017.01.09}} & \multicolumn{2}{c}{\texttt{2017.01.12}} \\
+    \midrule
+    Sample & \multicolumn{2}{c}{Micro-algae cultures} & \multicolumn{2}{c}{Micro-algae cultures} & \multicolumn{2}{c}{Bacteria cultures} \\ 
+    \midrule
+    \multirow{ 3}{*}{Day 1} & \multicolumn{2}{c}{Lysis} & \multicolumn{2}{c}{Lysis} & \multicolumn{2}{c}{Lysis} \\ 
+      & \multicolumn{2}{c}{Extraction} & \multicolumn{2}{c}{Extraction} & \multicolumn{2}{c}{Extraction} \\ 
+      & RNA isolation & DNA isolation & RNA isolation & {\color{Grapefruit} DNA isolation} & RNA isolation & DNA isolation \\ 
+      \midrule
+    \multirow{ 4}{*}{Day 2} & RNA purification & \multirow{ 3}{*}{DNA purification} & RNA purification & {\color{Grapefruit} x} & RNA purification & \multirow{ 3}{*}{DNA purification} \\ 
+     & RNA quantification &  & RNA quantification & {\color{Grapefruit} x} & RNA quantification & \\ 
+      & cDNA synthesis &  & cDNA synthesis & {\color{Grapefruit} x} & cDNA synthesis &  \\ 
+      & {\color{Bittersweet} cDNA quantification} & {\color{Grapefruit} DNA quantification} & {\color{Grapefruit} cDNA quantification} & {\color{Grapefruit} x} & cDNA quantification & {\color{Grapefruit} DNA quantification} \\
+    \midrule
+    \multirow{ 2}{*}{Day 3} & {\color{Bittersweet} x} & {\color{MediumGrey} DNA amplification} & {\color{Grapefruit} x} & {\color{Grapefruit} x} & cDNA amplification & {\color{MediumGrey} DNA amplification}\\
+     & {\color{Bittersweet} x} & {\color{Grapefruit} x} & {\color{Grapefruit} x} & {\color{Grapefruit} x} & {\color{Grass} v} & {\color{Grapefruit} x} \\
+    \bottomrule
+    \end{tabular}
+    }
+  \end{table}

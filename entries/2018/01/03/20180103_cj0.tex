@@ -1,0 +1,90 @@
+% mainfile: ../../../../master.tex
+\subsection{Extraction of total DNA and RNA from marine samples}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180103_cj0}
+\tags{rna,dna,lab,extr}
+\authors{cj}
+%\files{}
+%\persons{}
+
+\subsubsection{Introduction}
+
+As a training for myself, I will try to simultaneously extract the RNA and DNA from Mia's culture (she suspect that this one contains cyanobacteria) \texttt{20170623 SB5 0m F/2}.
+I will follow the protocol adapted from \citet{schneider2017extraction} and \citet{chomczynski2006single}.
+
+\subsubsection{Lysis and homogenisation}
+
+\begin{enumerate}
+\item 2 mL of cultures split in 2 2mL-Eppendorf tubes.
+\item Centrifuge at 9300 RCF (10000 rpm) at 4\degree C for 5 min (Eppendorf 5415R).
+\comment{I can see a light green pellet.} 
+\item Remove the supernatent.
+\item Add 2 mL of denaturing solution.
+\item Vortex.
+\item Incubate at room temperature for 10 min.
+\item Split lysate in 6 tubes (each containing approximately 0.6 mL).
+\end{enumerate}
+
+\subsubsection{Simultaneous DNA and RNA extraction}
+\begin{enumerate}
+\item Add 0.4 mL of 2~M sodium acetate pH 4.
+\mistake{I added too much, it was supposed to be 0.1 vol so I should not have added 0.4mL of sodium acetate buffer to each tube, but 60 \uL in each eppendorf tube.}
+\item Add 1 volume of phenol pH 4.
+\item Mix thoroughly by inversion.
+\item Add 0.2 volume of chloroform:isoamyl alcohol (24:1).
+\item Cool on ice for 15 min.
+\comment{I believe it remained on ice for longer than 15 min}
+\item Centrifuge for 20 min at 7200 g at 4\degree C (during the centrifugation, the mixture should separate into a lower phenol phase and interphase and an upper aqueous phase).
+\comment{After centrifugation, I am unable to see the two phases, so I combined all the contents of the 6 eppendorf tubes into one 15 mL falcon tube, and I added 1mL of chloroform isoamyl alcohol and I repeat the centrifugation step with a different rotor so at 5000 RPM.}
+\item Transfer carefully the supernatent (aqueous phase) which contains mostly RNA to a clean Falcon tube.
+\comment{Here I am able to transfer easely 4 mL of supernatent.}
+\item Add 2~mL of 2~M sodium acetate buffer pH 4.
+\item Mix thoroughly by inversion.
+\item Centrifuge for 20 min at 4\degree C.
+\mistake{Once again, it seems that the 2 mL of sodium acetate buffer pH 4 did not migrate to the upper phase, so I add an extra 1 mL of chloroform isoamyl alcohol and I repeat the centrifugation step.}
+\item Transfer carefully the upper phase to the already collected aqueous phase.
+\comment{The final volume is about 7 mL.}
+\item For later DNA isolation, add 1 volume of Tris-base pH 10.5 to the phenolic phase and mix well.
+\comment{To avoid the same issue as last time, I check the pH with pH paper to ensure the pH is back to neutral/alkaline which lead me to have two falcon tubes each containing 10 mL.}
+\item Continue with RNA precipitation. 
+\end{enumerate}
+
+\subsubsection{RNA isolation}
+\begin{enumerate}
+\item Add 1 volume of chloroform:isoamyl alcohol (24:1).
+\item Incubate at -20\degree C for at least 15 min (but no longer than 1h).
+\item Centrifuge again for 20 min at 4\degree C to separate the two phases.
+\item Transfer the aqueous upper plase to a frish tube
+\item Repeat the chloroform extraction by adding 2~mL of 2~M sodium acetate buffer to the organic phase, mix and centrifuge again, and finally transfer the supernatent to the already collected aqueous phase.
+\item Add 1/500 volume of glycogen (20 mg/mL) \sidenote{The glycogen solution was prepared by Stephen back in 2014 and kept at -20\degree C.}
+\item Mix vigorously.
+\item Add 1 volume of isopropanol to precipitate RNA.
+\item Incubate samples at -20\degree C overnight. 
+\comment{By incubating overnight it will precipitate everything so it is very likely that I will also precipitate some contaminants. But at least I am sure all the RNA will be precipitated and I can just perform more washing steps afterwards.}
+\item Continue with DNA isolation.
+\end{enumerate}
+
+\subsubsection{DNA isolation}
+\begin{enumerate}
+\item Mix tube containing the extracted DNA obtained from previous steps.
+\item Centrifuge again for 20 min at 5000 RPM at 4\degree C to separate the two phases.
+\item Transfer the upper aqueous phase into fresh tubes (at this point, check pH again with pH paper).
+\item Add 2~mL of 1~M Tris-base pH 10.5 to the lower phenolic phase and repeat mixing and centrifugation to separate the two phases.
+\mistake{I added the citrate buffer pH 4 instead of the Tris-base, so I had to add a lot of 1~M Tris-base pH 10.5 so that the pH is back to neutral (check with pH paper) so now, I have a lot of tubes ...}
+\item Transfer the upper aqueous phase to the already collected aqueous phase (at this point, check pH again with pH paper).
+\item Add 1 volume of chloroform:isoamyl alcohol (24:1) to the aqueous phase.
+\item Mix thoroughly by inversion.
+\item Centrifuge for 10 min at 4\degree C to separate the two phases/
+\item Add 1/500 volume of glycogen (20 mg/mL).
+\item Mix thoroughly.
+\item Add 2.5 volumes of ice-cold pure ethanol to precipitate the DNA. 
+\item Mix thoroughly.
+\item Incubate samples at -20\degree C overnight.
+\sidenote{I decided to do the incubations overnight, because I am not feeling very well today (periods, yeah!), so it is better that I do the concentration of the nucleic acids tomorrow.}
+\comment{By incubating overnight it will precipitate everything so it is very likely that I will also precipitate some contaminants. But at least I am sure all the DNA will be precipitated and I can just perform more washing steps afterwards.}
+\end{enumerate}
+
+
+
+

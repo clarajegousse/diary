@@ -1,0 +1,144 @@
+% mainfile: ../../../../master.tex
+\subsection{Amplification by PCR with OneTaq\cR polymerase and \texttt{EUK1} primers of DNA (and cDNA) extracted from micro-algae cultures with two different kits}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180218_cj0}
+\tags{lab,pcr,dna,cdna}
+\authors{cj}
+%\files{}
+%\persons{}
+
+\subsubsection{Introduction}
+Today, I will basically repeat the same experiment as yesterday. I will try to amplify the DNA and cDNA extracted from micro-algae cultures two different kits: the MasterPure\texttrademark~ by Epicentre and the AllPrep DNA/RNA Mini Kit by Qiagen. The only difference is that I will try to amplify these samples with eukaryote primers \texttt{EUK1}.
+
+
+\subsubsection{Description of the DNA templates}
+\begin{enumerate}
+\item \texttt{{\color{Grass} CJ20180201\_MP}}: DNA extracted from 2~mL micro-algae culture with modified MasterPure\texttrademark~ kit.
+\item \texttt{{\color{Aqua} CJ20180207\_AP}}: DNA extracted from 2~mL micro-algae culture with AllPrep kit.
+\item \texttt{{\color{Lavender} CJ20180213\_AP}}: DNA extracted from 4~mL micro-algae culture with AllPrep kit.
+\item \texttt{{\color{Sunflower} CJ20180214\_MP}}: DNA extracted from 4~mL micro-algae culture with modified MasterPure\texttrademark~ kit.
+\item \texttt{CJ20180217\_MP1+}: cDNA obtained by reverse transcription \sidenote{Reverse transcription achieve with ProtoScript First Strand Synthesis by New England Biolab.} from RNA extracted from 2~mL micro-algae culture with modified MasterPure\texttrademark~ kit. 
+\item \texttt{CJ20180217\_AP1+}: cDNA obtained by reverse transcription from RNA extracted from 2~mL micro-algae culture with AllPrep kit. 
+\item \texttt{CJ20180217\_AP2+}: cDNA obtained by reverse transcription from RNA extracted from 4~mL micro-algae culture with AllPrep kit. 
+\item \texttt{CJ20180217\_MP2+}: cDNA obtained by reverse transcription from RNA extracted from 4~mL micro-algae culture with modified MasterPure\texttrademark~ kit. 
+\end{enumerate}
+
+\subsubsection{Description of controls}
+My controls are:
+\begin{itemize}
+\item[+] diluted DNA from \textit{Thermoanaerobacterium sp.} (Bacteria)
+\item[+] DNA from \textit{Thermococcus barophilus} 1 ng/\uL (Archeae)
+\item[-] DNA from Cod 1 ng/\uL (Eukaryote)
+\item[-] Autoclaved MilliQ water
+\end{itemize}
+
+\important{I did not have do use archaeal and bacterial DNA, but I am so used to defrost them before doing a PCR, that I did it anyways. So I decided to use them which will allow me to make sure these DNA are not amplified.}
+
+
+\subsubsection{Description of the polymerase}
+
+I will use the \href{https://www.neb.com/products/m0481-onetaq-hot-start-dna-polymerase#Product%20Information}{OneTaq\cR Hot Start DNA polymerase} by New England BioLabs with the \gls{emp} primers.
+
+\subsubsection{Description of the primers}
+
+\texttt{EUK1} is the primer set corresponding to the V4 region of the 18S rRNA gene. It is the 3NDf and V4\_euk\_R2 published by \citet{braate2010freshwater}.
+
+
+\subsubsection{Preliminary setup}
+
+\begin{enumerate}
+\item Defrost all reagents and samples on ice (1h). \sidenote{It is very important that reagents (especially primers and dNTPs) are fully defrosted otherwise the concentration will not be accurate.}
+\item Place all required material in LabCair \gls{pcr} Workstation and turn on \gls{uv} light for at least 20 min.
+\comment{I forgot to place gloves under \gls{uv} lights. Too bad, I will just sterilise my gloves with ethanol and use few drops of RNase Zap.}
+\end{enumerate}
+
+\subsubsection{Methods}
+
+\begin{enumerate}
+\item Work in LabCair \gls{pcr} Workstation
+\item Multiply the volume of each reagent by the number of individual \gls{pcr} reactions you wish to perform (including the positive and negative controls) and add 2 extra to account for pipetting error (see table \ref{tab:20180218_mastermix}).
+\comment{I have 8 samples, 4 controls, and 2 extra, which means I must prepare a master mix for 16 reactions.}
+\item In a single 1.5mL-Eppendorf tube combine the following:
+	\begin{itemize}
+	\item Sterile dH2O
+	\item 5X OneTaq Reaction Buffer
+	\item OneTaq GC Enhancers
+	\item dNTP mix (10 mM each nt)
+	\item primers (EUK1 primers)
+	\item OneTaq\cR Hot Start DNA Polymerase
+	\end{itemize}
+\item Mix the contents by gently pipetting up and down several times (keep tube on ice)
+\item Transfer  22.5 \textmu L of Master Mix into small \gls{pcr} tubes
+\item add 10 \textmu L of \gls{dna} template in each \gls{pcr} tube (on the pre-PCR bench) following the layout shown in figure \ref{tikz:20180218_pcr_racks}.
+\item Secure the tops to the \gls{pcr} tubes
+\item Tap gently tubes to mix up everything
+\item Centrifuge briefly to bring all the liquid to the bottom before placing it in the \gls{pcr} machine
+\end{enumerate}
+\comment{I finished the tube of OneTaq Hot Start Polymerase (lucky I ordered some recently).}
+
+\begin{table}[htbp]
+\caption{Master Mix}
+\label{tab:20180218_mastermix}
+\centering
+\begin{tabular}{l r r c}
+\toprule
+Primers & \multicolumn{2}{c}{EUK1}\\
+\cmidrule(l){2-3}
+ & \multicolumn{2}{c}{Volumes (\uL) for} \\
+ \cmidrule(l){2-3}
+ & 1 reaction & 16 reactions \\ 
+\midrule 
+dH2O & 12.80~\uL & 204.80~\uL\\
+5X OneTaq Reaction Buffer & ~5.00~\uL & ~80.00~\uL \\
+GC Enhancers & ~0.50~\uL & ~40.00~\uL \\
+dNTPs (10mM) & ~0.50~\uL & ~~8.00~\uL \\
+Forward primer (10\textmu M) & ~0.75~\uL & ~12.00~\uL \\
+Reverse primer (10\textmu M) & ~0.75~\uL & ~12.00~\uL \\
+OneTaq\cR DNA Polymerase & ~0.20\uL & ~~3.20\uL \\
+\midrule
+Template DNA & 2.5\uL & - \\
+\midrule
+$V_{f}$ (\uL) & 25 & - \\
+\bottomrule
+\end{tabular}
+% }
+\end{table}
+
+
+\begin{figure}[htbp]
+\caption{Samples organisation in PCR tubes}
+\label{tikz:20180218_pcr_racks}
+\input{graphics/tikz/20180218_pcr_racks.tex}
+\end{figure}
+
+\comment{Figure \ref{tikz:20180218_pcr_racks} shows the actual layout of the samples in the rack, but I must admit this layout is not the most logical. In a way, rack \#6 contains all controls while rack \#2 contains reactions mix with DNA and cDNA templates.}
+
+% \begin{table}[htbp]
+% \caption{Thermocycler settings}
+% \label{tab:20180218_thermocycler_settings}
+% \centering
+% \begin{tabular}{l r r}
+%  & \multicolumn{2}{c}{\texttt{EMP}}\\
+% \cmidrule(l){2-3}
+% Steps & T(\degree C) & Time \\
+% \midrule
+% Initial denaturation & 94 & 30 sec \\
+% \midrule
+% Denaturation & 94 & 30 sec \\
+% Annealing & 68 & 40 sec \\
+% Extension & 68 & 20 sec \\
+% \midrule
+% Final extension & 68 & 2 min \\
+% Infinite hold & 4 & - \\
+% \bottomrule
+% \end{tabular}
+% % }
+% \end{table}
+
+I used the preset method on the thermocycler.
+
+\important{I increased the number of cycles from 30 to 35 cycles.}
+
+
+

@@ -1,0 +1,45 @@
+% mainfile: ../../../../master.tex
+\subsection{cDNA quantification with Qubit\texttrademark ~ssDNA Assay Kit
+}
+% The part of the label after the colon must match the file name. Otherwise,
+% conditional compilation based on task labels does NOT work.
+\label{task:20180116_cj2}
+\tags{cdna,qnt,lab}
+\authors{cj}
+%\files{}
+%\persons{}
+
+I did not dilute the reverse transcription mix at the end of the reaction, so the final volume was 20~\uL. I used 2~\uL for the Nanodrop and 2~\uL for the Qubit\texttrademark ssDNA Assay. Therefor the final volume is 16~\uL. 
+
+Table \ref{tab:20180116_cdna_qnt} summarise the cDNA concentrations and cDNA quantities obtained after the reverse transcription.
+
+\begin{table}[H]
+\caption{Total cDNA quantities in samples measured with Qubit\texttrademark ~ssDNA Assay Kit}
+\label{tab:20180116_cdna_qnt}
+\centering
+\begin{tabular}{l r r r r}
+\toprule
+Sample ID & \textmu g/mL & $V_f$ (mL) & m (\textmu g) & m (ng) \\ \midrule
+\texttt{cDNA\_ALMIX+} & 4.19 & 0.016 & 0.067 & ~67.0 \\
+\texttt{cDNA\_ALMIX-} & 34.2 & 0.016 & 0.547 & 547.2 \\
+\texttt{cDNA\_423+} & 3.52 & 0.016 & 0.056 & ~56.3 \\
+\texttt{cDNA\_423-} & 3.91 & 0.016 & 0.062 & ~62.5 \\
+\texttt{cDNA\_CTRL-} & 3.95 & 0.016 & 0.063 & ~63.2 \\
+\texttt{cDNA\_CTRL--} & 25.30 & 0.016 & 0.404 & 404.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These results are alarming because the negative controls of the reverse transcription contain more cDNA than my actual samples. 
+
+Why do I obtain such results?
+\begin{itemize}
+\item[{\color{Bittersweet} \textbf{!}}] an issue with the Qubit\texttrademark ~ssDNA Assay Kit.
+\item[{\color{Mint} \textbf{?}}] test the Qubit\texttrademark ~ssDNA Assay Kit with autoclaved dionized water and see if the Qubit\texttrademark~ detects any ssDNA.
+\\
+\item[{\color{Bittersweet} \textbf{!}}] one of the solution from the ProtoScript\cR First Strand cDNA Synthesis Kit is contaminated, or the kit is simply too old.
+\item[{\color{Mint} \textbf{?}}] use the kit on autoclaved dionized water only.
+\\
+\item[{\color{Bittersweet} \textbf{!}}] my samples do not contain cDNA at all.
+\item[{\color{Mint} \textbf{?}}] try to amplify the resulting cDNA by \gls{pcr} with bacterial primers (probably \gls{emp} primers).
+\end{itemize}

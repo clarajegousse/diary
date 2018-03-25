@@ -1,0 +1,38 @@
+\newcommand*\smp[1]{\texttt{#1}}
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[%remember picture,
+  well/.style={rounded rectangle, minimum width=3.5cm, fill=lightgrey, thick, inner sep=3pt, node distance=3pt, minimum height=0.5cm},
+  line/.style={fill=white, thick, inner sep=3pt, node distance=3pt, align=left},
+  racknum/.style={thick, inner sep=3pt, node distance=3pt, minimum width=0.6cm},
+  rack/.style={fill=Aqua, thick, inner sep=3pt, node distance=3pt},
+  primer/.style={fill=white, align=left}
+  ]
+    \node[primer] (arch) {\textbf{Random Primer Mix}};
+       \node[rack, fill=white, below=of arch] (labels) {
+        \begin{tikzpicture}
+          \node [racknum, draw=white] (1)  {};
+          \node [well, fill=white, right=of 1] (well1)  {A};
+          \node [well, fill=white, right=of well1] (well2)  {B};
+          \node [well, fill=white, right=of well2] (well3)  {C};
+          \node [well, fill=white, right=of well3] (well4)  {D};
+          \node [well, fill=white, right=of well4] (well5)  {E};
+          \node [well, fill=white, right=of well5] (well6)  {F};
+          \node [well, fill=white, right=of well6] (well7)  {G};
+          \node [well, fill=white, right=of well7] (well8)  {H};
+        \end{tikzpicture}
+      };
+      \node[rack, below=of labels] (rack1) {
+        \begin{tikzpicture}
+          \node [racknum] (1)  {\#12~};
+          \node [well, right=of 1] (well1)  {++};
+          \node [well, right=of well1] (well2)  {+-};
+          \node [well, right=of well2] (well3)  {-+};
+          \node [well, right=of well3] (well4)  {-\-};
+          \node [well, right=of well4] (well5)  {\smp{}};
+          \node [well, right=of well5] (well6)  {\smp{}};
+          \node [well, right=of well6] (well7)  {\smp{}};
+          \node [well, right=of well7] (well8)  {\smp{}};
+        \end{tikzpicture}
+      };
+\end{tikzpicture}
+}
